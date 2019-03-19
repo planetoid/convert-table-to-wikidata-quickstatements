@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-<title>表格內容轉換成 Wikidata QuickStatements</title>
-<meta charset="utf-8">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>表格內容轉換成 Wikidata QuickStatements</title>
     <style type="text/css">
         .small {
             height: 20px;
@@ -15,6 +16,13 @@
             background-color: whitesmoke;
         }
 
+        textarea {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+            width: 100%;
+        }
 
     </style>
 </head>
