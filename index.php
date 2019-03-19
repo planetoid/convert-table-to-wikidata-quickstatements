@@ -99,23 +99,25 @@ if($debug){
 
 
 ?>
-<div class="info">鍵盤快速鍵說明： Windows 作業系統請按 Alt + 按鍵。 Mac 作業系統請按 control + alt + 按鍵。</div>
 
 <div class="converted_result">
+
+<p><span title="跳至輸出框的快速鍵為 Alt-O"><span style="cursor:help; Border-bottom-style:dotted; Border-bottom-width:thin;">轉換後的 Wikidata QuickStatements [O]</span
+<br />
+
 <?php
-
-echo "<p>";
-echo '轉換後的 Wikidata QuickStatements <br />';
-
 $converted = '';
 if( isset($_POST['input']) && strlen(trim($_POST['input'])) > 0 ){
     //有輸入關鍵字
     $converted = $wiki_data->readFile($_POST['input']);
 }
-echo '<textarea id="selectable" onFocus="this.select()" '. $outputFocus .' rows="7" cols="180">'. $converted . "</textarea>";
+echo '<textarea id="selectable" onFocus="this.select()" '. $outputFocus .' rows="7" cols="180" ACCESSKEY="O">'. $converted . "</textarea>";
 
 ?>
 </div>
+
+<div class="info">鍵盤快速鍵說明： Windows 作業系統請按 Alt + 按鍵。 Mac 作業系統請按 control + alt + 按鍵。</div>
+Source code are available on <a href='https://github.com/planetoid/convert-table-to-wikidata-quickstatements/'>Gitlab</a>.
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
