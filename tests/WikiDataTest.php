@@ -6,6 +6,8 @@
  * Time: 下午5:21
  */
 
+namespace Summer;
+
 use PHPUnit\Framework\TestCase;
 use Summer;
 
