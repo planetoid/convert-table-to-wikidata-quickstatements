@@ -1,0 +1,6 @@
+language: php
+
+php:
+  - 7
+
+script: phpunit -c phpunit.xml --coverage-text
